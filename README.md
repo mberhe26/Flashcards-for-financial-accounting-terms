@@ -29,10 +29,12 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 
+![P1 cp](https://github.com/mberhe26/Flashcards--2/assets/127989021/15af8bd3-f064-4ae3-bb55-aebb7a84fa59)
 
 
 
-<img src='(https://github.com/mberhe26/Flashcards--2/assets/127989021/172dfbbd-1eef-437e-95d3-5cf1208c0f0c)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='[(https://github.com/mberhe26/Flashcards--2/assets/127989021/172dfbbd-1eef-437e-95d3-5cf1208c0f0c)](https://github.com/mberhe26/Flashcards--2/assets/127989021/15af8bd3-f064-4ae3-bb55-aebb7a84fa59)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
