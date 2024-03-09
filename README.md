@@ -1,10 +1,11 @@
-# Web Development Project 2 - *Name of App Here*
+# Web Development Project 2 - Flashcards
 
-Submitted by: **Your Name Here**
+Submitted by: Mastewal Berhe
 
-This web app: **insert description**
+This web app: flashcards for 10 Professional Financial
+Accounting Terms
 
-Time spent: **X** hours spent in total
+Time spent: 4 hours spent in total
 
 ## Required Features
 
