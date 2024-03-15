@@ -30,7 +30,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![P3 cp](https://github.com/mberhe26/Flashcards-for-financial-accounting-terms/assets/127989021/02fe451a-59c4-4a6b-b112-b680c84cb5bd)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
