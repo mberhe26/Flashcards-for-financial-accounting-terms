@@ -2,7 +2,7 @@
 
 Submitted by: Mastewal Berhe
 
-This web app: **insert description**
+This web app: Flashcards containing 10 professional financial accounting terms, each with a corresponding definition or explanation, and provide visual feedback indicating whether the user's answer is correct or incorrect, utilize a green bar for correct answers and a red bar for incorrect ones.
 
 Time spent: 4 hours spent in total
 
