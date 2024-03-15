@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import '../App.css';
 
-const Card = ({ frontContent, backContent }) => {
-    const [isFlipped, setIsFlipped] = useState(false);
-
+const Card = ({ frontContent, backContent, handleSkips,  }) => {
+    const [isFlipped, setIsFlipped] = useState(true); 
     const handleClick = () => {
         setIsFlipped(!isFlipped);
     };
@@ -24,18 +23,22 @@ const Card = ({ frontContent, backContent }) => {
 
 const Flashcards = () => {
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
+    const [userGuess, setUserGuess] = useState('');
+    const [inputClass, setInputClass] = useState('');
+
 
     const handleSkip = () => {
-        const randomIndex = Math.floor(Math.random() * cards.length); 
-        setCurrentCardIndex(randomIndex);
+        setCurrentCardIndex((prevIndex) => (prevIndex + 1 + cards.length) % cards.length); 
     };
     
     const handlePrevious = () => {
         setCurrentCardIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length); 
     };
     
-
     
+    
+    
+
 
     const cards = [
         {
@@ -80,18 +83,53 @@ const Flashcards = () => {
         }
     ];
 
+
+    const handleInputChange = (event) => {
+        setUserGuess(event.target.value);
+        setInputClass(''); 
+    };
+    
+    const handleGuessSubmit = () => {
+        const currentCard = cards[currentCardIndex];
+        const cardWord = currentCard.frontContent.props.children.trim().toLowerCase();
+        const userInput = userGuess.trim().toLowerCase();
+    
+        setInputClass(userInput === cardWord ? 'input-correct' : 'input-incorrect');
+        setUserGuess('');
+    };
+    
     return (
         <div className="flashcards-container">
             <Card
                 frontContent={cards[currentCardIndex].frontContent}
                 backContent={cards[currentCardIndex].backContent}
+                onPrevious={handlePrevious}
+                onNext={handleSkip}
             />
+            
+    
+           
+        <div className="input-container">
+            <p >Guess the answer here:</p><input 
+                type="text"
+                value={userGuess}
+                onChange={handleInputChange}
+                className={inputClass} 
+            />
+            
+        </div>
+
+            
+    
             <div className="flashcard-navigation">
-                <button onClick={handlePrevious} >Previous</button>
-                <button onClick={handleSkip} >Skip</button>
+                <button onClick={handlePrevious}>Previous</button>
+                <button onClick={handleSkip}>Next</button>
+            
+                <button onClick={handleGuessSubmit}>Submit</button>
             </div>
         </div>
     );
+    
 };
 
 export default Flashcards;

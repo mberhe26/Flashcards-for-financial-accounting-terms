@@ -8,6 +8,7 @@
 .app-container {
   color: rgb(248, 247, 244);
   text-align: center;
+  padding: auto;
 }
 
 
@@ -24,8 +25,7 @@ body {
   width: 500px;
   height: 200px;
   padding: 20px;
-  margin:10px
-  box-shadow 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .card-inner {
@@ -61,16 +61,39 @@ body {
 
 .flashcard-navigation {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   width: 100%; 
-  padding: 10px 0;
+  padding: 0.5px 0;
 }
 
 .flashcard-navigation button {
-  margin: 10px; 
-  align-items: center;
+  margin: 5px; 
+  
+}
+
+.input-correct {
+  border: 7px solid green;
+}
+
+.input-incorrect {
+  border: 7px solid red;
+}
+.input-container {
+  display: flex; 
+  align-items: center;  
+  justify-content: center;
+ margin-bottom: 70px;
+  
+}
+.input-container p {
+  margin-right: 10px; 
+}
+@media screen and (max-width: 600px) {
+  .input-container {
+    margin-bottom: 120px; 
+  }
 }
